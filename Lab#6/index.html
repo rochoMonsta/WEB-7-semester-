@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet">
+    <title>Lab#6</title>
+</head>
+<body background="images/gora.jpg">
+    <hr>
+    <div>
+        <img src="images/google.png" height="200" width="200"><br>
+        <h1>Створення нового акаунту Google</h1>
+        <form>
+            <fieldset class="field_set">
+                <legend><b>Ім'я та Прізвище користувача</b></legend>
+                <input type="text" name="firstNameInput" value="Roman" maxlength="15" placeholder="Ім'я" tabindex=""> <br>
+                <input type="text" name="lastNameInput" value="Cholkan" maxlength="15" placeholder="Прізвище" tabindex=""> 
+            </fieldset>
+            
+
+            <hr class="hr-underline">
+            
+            <fieldset class="field_set">
+                <legend><b>Login/Password/Email</b></legend>
+                <input type="text" name="loginInput" maxlength="25" placeholder="Login" tabindex=""> <br>
+                <input type="password" name="passwordInput" maxlength="25" placeholder="Password" tabindex=""> <br>
+                <input type="email" name="emailInput" maxlength="25" placeholder="Email" tabindex=""> <br>
+            </fieldset>
+
+            <hr class="hr-underline">
+
+            <fieldset class="field_set">
+                <legend><b>Сервіси при'язки</b></legend>
+                <b>Виберіть потрібні вам сервіси</b> <br>
+                <input type="checkbox" name="gmailCheckBox" tabindex=""><b>Gmail</b> <br>
+                <input type="checkbox" name="youtubeChackBox" tabindex=""><b>YouTube</b> <br>
+            </fieldset>
+            
+            <hr class="hr-underline">
+            
+            <fieldset class="field_set">
+                <legend><b>Особиста інформація</b></legend>
+                <b>Виберіть стать</b> <br>
+                <input type="radio" name="stat" value="male" checked tabindex=""><b>Чоловік</b> <br>
+                <input type="radio" name="stat" value="female" tabindex=""><b>Жінка</b> <br>
+                <input type="url" name="urlLinkdin" placeholder="linkdin" tabindex=""><br>
+                <input type="number" placeholder="Ваш вік" min="0" max="100" step="1" tabindex=""><br>
+                <input type="date" placeholder="Дата народження" min="1900-01-01" tabindex=""><br>
+                <input type="tel" placeholder="Ваш номер телефону" pattern="+380[1-9]{2}-[0-9]{3}-[0-9]{4}" tabindex=""><br>
+                <input type="color" tabindex=""><br>
+                <b>Ваше місто</b><br>
+                <select tabindex="">
+                    <option>Чернівці</option>
+                    <option>Рівне</option>
+                    <option>Львів</option>
+                    <option>Херсон</option>
+                    <option>Київ</option>
+                    <option>Запоріжжя</option>
+                </select><br>
+            </fieldset>
+            
+            <hr class="hr-underline">
+
+            <fieldset class="field_set">
+                <legend><b>Ваш коментар</b></legend>
+                <textarea placeholder="Enter come text" maxlength="2500" cols="27" rows="5" tabindex=""></textarea>
+            </fieldset>
+
+            <hr class="hr-underline">
+            
+            <button type="reset">
+                <img src="images/reset.png" height="30px" width="30px">
+            </button>
+            <button type="submit">
+                <img src="images/email.png" height="30px" width="30px">
+            </button>
+        </form>
+        <br>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" accept=".png, .jpeg, .jpg">
+        </form>
+    </div>
+</body>
+</html>

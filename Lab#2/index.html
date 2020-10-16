@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Лабораторна робота №1">
+    <meta name="author" content="Чолкан Роман ВП-41">
+    <meta name="keywords" content="HTML, web, lab">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Лабораторна робота №1</title>
+</head>
+<body background="image/mrrobot.jpg" link="#a30d44" vlink="red" alink="#e3407b">
+    <span class="div-main">
+        <strong>Mr.Robot</strong><hr>
+        <div>
+            A notorious gang in 1919 Birmingham, England, is led by the fierce<br>
+            Tommy Shelby, a crime boss set on moving up in the world no matter<br>
+            the cost.<br><br>
+            <div><span class="authro-color-text">Starring:</span> Cillian Murphy, Sam Neill, Helen McCrory</div>
+            <div><span class="authro-color-text">Creators:</span> Steven Knight</div>
+        </div>
+        <p>Спец-символи: &copy; &reg; &darr; &pi; &lambda; &trade;<br>
+            Текст який відтворється так, як був внесений в <abbr title="HyperText Markup Language">(html)</abbr>:
+            <pre>
+                class User
+                {
+                    [Key]
+                    public int UserID { get; set; }
+                    public string Name { get; set; }
+                    public string Surname { get; set; }
+                    public int Age { get; set; }
+
+                    public User() { }
+                    public User(string Name, string Surname)
+                    {
+                        if (string.IsNullOrWhiteSpace(Name) || string.IsNullOrWhiteSpace(Surname))
+                            throw new ArgumentNullException();
+                        this.Name = Name; this.Surname = Surname;
+                    }
+                    public User(string Name, string Surname, int Age) : this(Name, Surname)
+                    {
+                        if (Age < 0 || Age > 100)
+                            throw new ArgumentException();
+                        this.Age = Age;
+                    }
+                    public override string ToString()
+                    {
+                        return $"Person ID {this?.UserID}\n\t" +
+                                $"Name: {this?.Name}\n\t" +
+                                $"Surname: {this?.Surname}\n\t" +
+                                $"Age: {this?.Age}";
+                    }
+                }
+            </pre>
+            <code>
+                Console.WriteLine("Hello, world! Mr.Robot.");
+            </code>
+        </p>
+        <hr>
+        <p class="p-left">
+            <b>Sometext</b> <s>sometext</s> sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext <code>sometext</code>
+        </p>
+        <p class="p-center">
+            <b>Sometext</b> <s>sometext</s> sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext <code>sometext</code>
+        </p>
+        <p class="p-left">
+            <b>Sometext</b> <s>sometext</s> sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext <code>sometext</code>
+        </p>
+        <p class="p-justify">
+            <b>Sometext</b> <s>sometext</s> sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext
+            sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext sometext <code>sometext</code>
+        </p>
+    </span>
+</body>
+</html>
