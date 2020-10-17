@@ -1,0 +1,78 @@
+div{
+    text-align: center;
+}
+@font-face{
+    font-family: mrrobot;
+    src: url(fonts/mrrobot.ttf);
+}
+body{
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+
+    background-size: contain; 
+    
+    /*background-position: right bottom;
+    background-repeat: no-repeat;*/
+}
+h1{
+    font-family: mrrobot;
+    font-size: 300%;
+    color: red;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+h2{
+    font-family: mrrobot;
+    font-size: 175%;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.p-text{
+    font-family: 'Krona One', sans-serif;
+    text-transform: lowercase;
+    color: white;
+    word-wrap: break-word;
+}
+pre{
+    text-align: left;
+    color: white;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+
+/*.p-4{
+    text-decoration: line-through;
+    text-align: justify;
+    color: white;
+    background-color: black;
+}
+.p-1{
+    color: aquamarine;
+    background-color: black;
+    text-align: left;
+}
+.p-3{
+    color: bisque;
+    background-color: darkred;
+    text-align: right;
+    letter-spacing: 10px;
+}
+.p-5{
+    color: honeydew;
+    background-color: blueviolet;
+}
+.first-word{
+    font-variant: small-caps;
+}
+.p-2{
+    text-align: center;
+    color: white;
+    background-color: black;
+    line-height: 150%;
+}
+.word-blue{
+    color: blue;
+}
+*/

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Lab#8</title>
+</head>
+<body background="images/mrrobot.jpg">
+    <div>
+        <h1>Mr. Robot</h1>
+        <h2>fuck society</h2>
+        <p class="p-text">
+            Console.WriteLine("hacking...done")
+        </p>
+        <pre>
+            class User
+            {
+                [Key]
+                public int UserID { get; set; }
+                public string Name { get; set; }
+                public string Surname { get; set; }
+                public int Age { get; set; }
+
+                public User() { }
+                public User(string Name, string Surname)
+                {
+                    if (string.IsNullOrWhiteSpace(Name) || string.IsNullOrWhiteSpace(Surname))
+                        throw new ArgumentNullException();
+                    this.Name = Name; this.Surname = Surname;
+                }
+                public User(string Name, string Surname, int Age) : this(Name, Surname)
+                {
+                    if (Age < 0 || Age > 100)
+                        throw new ArgumentException();
+                    this.Age = Age;
+                }
+                public override string ToString()
+                {
+                    return $"Person ID {this?.UserID}\n\t" +
+                            $"Name: {this?.Name}\n\t" +
+                            $"Surname: {this?.Surname}\n\t" +
+                            $"Age: {this?.Age}";
+                }
+            }
+        </pre>
+        <!--
+        <p class="p-1">
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span>
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span> 
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span> 
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span>
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span> 
+                </p>
+                <p class="p-2">
+                    <span class="first-word">sometext</span> sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span>
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span> 
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span> 
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span>
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span>     
+                </p>
+                <p class="p-3">
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span>
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span> 
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span> 
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span>
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span>  
+                </p>
+                <p class="p-4">
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span>
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span> 
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span> 
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span>
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span> 
+                </p>
+                <p class="p-5">
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span>
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span> 
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span> 
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span>
+                    sometext sometext sometext sometext <span class="word-blue">sometext</span> sometext sometext sometext sometext <span class="word-blue">sometext</span> 
+                </p>
+        -->
+        
+    </div>
+</body>
+</html>
